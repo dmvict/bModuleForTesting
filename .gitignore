@@ -1,0 +1,12 @@
+
+/_*
+/.*
+-*
+*.log
+*.db
+*.tmp
+*.out
+node_modules
+package-lock.json
+
+proto/wtools/atop/will.test/_asset/_repo
