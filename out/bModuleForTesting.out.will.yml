@@ -3,11 +3,11 @@ root:
   - bModuleForTesting.out
 consistency:
   ../.ex.will.yml: &ref_0
-    hash: dcb51943ea56c246554832f1f9fa7c27
+    hash: 88a31880ba98895c6cb73dfaa5a3d208
     size: 2388
   ../.im.will.yml: &ref_1
-    hash: fec71a9c77ccc59bcf152c0997eb8628
-    size: 6871
+    hash: 98ca77acea45ee94e9da19ddf74f9dfb
+    size: 6794
 module:
   bModuleForTesting.out:
     about:
@@ -15,7 +15,7 @@ module:
       org: noorg
       description: Utility to manage modules of complex modular systems.
       enabled: 1
-      version: 0.0.7
+      version: 0.0.8
       interpreters: &ref_2
         - njs >= 10.0.0
         - chrome >= 60.0.0
@@ -195,10 +195,6 @@ module:
         enabled: 0
       wTemplateTreeEnvironment:
         path: 'npm:///wtemplatetreeenvironment'
-        autoExporting: 0
-        enabled: 0
-      wTemplateFileWriter:
-        path: 'npm:///wtemplatefilewriter'
         autoExporting: 0
         enabled: 0
       wProcess:
@@ -912,7 +908,7 @@ module:
           - 'build::npm'
     exported:
       proto.export:
-        version: 0.0.7
+        version: 0.0.8
         recursive: 0
         withIntegrated: 2
         tar: 0
@@ -932,7 +928,7 @@ module:
       org: noorg
       description: Utility to manage modules of complex modular systems.
       enabled: 1
-      version: 0.0.7
+      version: 0.0.8
       interpreters: *ref_2
       keywords: *ref_3
       license: MIT
@@ -1069,10 +1065,6 @@ module:
         enabled: 0
       wTemplateTreeEnvironment:
         path: 'npm:///wtemplatetreeenvironment'
-        autoExporting: 0
-        enabled: 0
-      wTemplateFileWriter:
-        path: 'npm:///wtemplatefilewriter'
         autoExporting: 0
         enabled: 0
       wProcess:
@@ -1735,8 +1727,8 @@ module:
           - 'build::npm'
     consistency:
       ../.ex.will.yml:
-        hash: dcb51943ea56c246554832f1f9fa7c27
+        hash: 88a31880ba98895c6cb73dfaa5a3d208
         size: 2388
       ../.im.will.yml:
-        hash: fec71a9c77ccc59bcf152c0997eb8628
-        size: 6871
+        hash: 98ca77acea45ee94e9da19ddf74f9dfb
+        size: 6794

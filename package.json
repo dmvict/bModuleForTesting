@@ -2,7 +2,7 @@
   "name": "bmodulefortesting",
   "description": "Utility to manage modules of complex modular systems.",
   "enabled": 1,
-  "version": "0.0.7",
+  "version": "0.0.8",
   "npm.engines": {
     "node": ">= 10.0.0",
     "chrome": ">= 60.0.0",
@@ -44,7 +44,6 @@
     "wtranspile": "stable",
     "wTools": "stable",
     "wtemplatetreeenvironment": "stable",
-    "wtemplatefilewriter": "stable",
     "wstatestorage": "stable",
     "wstatesession": "stable",
     "wstager": "stable",
