@@ -1,6 +1,6 @@
 {
   "name": "bmodulefortesting",
-  "version": "0.0.1",
+  "version": "0.0.60",
   "description": "Utility to manage modules of complex modular systems",
   "author": "Kostiantyn Wandalen <wanalen@01.school>",
   "contributors": [
