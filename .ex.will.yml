@@ -1,7 +1,7 @@
 about:
   name: bModuleForTesting
   description: Utility to manage modules of complex modular systems.
-  version: 0.0.15
+  version: 0.0.16
   enabled: 1
   interpreters:
     - njs >= 10.0.0
