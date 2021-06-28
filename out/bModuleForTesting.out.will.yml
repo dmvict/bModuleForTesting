@@ -3,7 +3,7 @@ root:
   - bModuleForTesting.out
 consistency:
   ../.ex.will.yml: &ref_0
-    hash: 8ed19b7c6ae858ae2e8e331c37e13f30
+    hash: 61fcf05812d2713efb6e6b6e71151f19
     size: 2389
   ../.im.will.yml: &ref_1
     hash: 98ca77acea45ee94e9da19ddf74f9dfb
@@ -15,7 +15,7 @@ module:
       org: noorg
       description: Utility to manage modules of complex modular systems.
       enabled: 1
-      version: 0.0.52
+      version: 0.0.53
       interpreters: &ref_2
         - njs >= 10.0.0
         - chrome >= 60.0.0
@@ -908,7 +908,7 @@ module:
           - 'build::npm'
     exported:
       proto.export:
-        version: 0.0.52
+        version: 0.0.53
         recursive: 0
         withIntegrated: 2
         tar: 0
@@ -928,7 +928,7 @@ module:
       org: noorg
       description: Utility to manage modules of complex modular systems.
       enabled: 1
-      version: 0.0.52
+      version: 0.0.53
       interpreters: *ref_2
       keywords: *ref_3
       license: MIT
@@ -1727,7 +1727,7 @@ module:
           - 'build::npm'
     consistency:
       ../.ex.will.yml:
-        hash: 8ed19b7c6ae858ae2e8e331c37e13f30
+        hash: 61fcf05812d2713efb6e6b6e71151f19
         size: 2389
       ../.im.will.yml:
         hash: 98ca77acea45ee94e9da19ddf74f9dfb
