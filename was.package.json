@@ -1,6 +1,6 @@
 {
   "name" : "bmodulefortesting",
-  "version" : "0.0.1",
+  "version" : "0.0.2",
   "description" : "Module for testing. This module is a test asset and not intended to be used with another purpose.",
   "author" : "Kostiantyn Wandalen <wanalen@01.school>",
   "contributors" :
@@ -31,7 +31,11 @@
     "docker-run-centos" : "docker run --rm willbe-centos",
     "docker-run-ubuntu" : "docker run --rm willbe-ubuntu"
   },
-  "repository" : { "type" : "git", "url" : "https://github.com/bot-w/bModuleForTesting.git" },
+  "repository" :
+  {
+    "type" : "git",
+    "url" : "https://github.com/bot-w/bModuleForTesting.git"
+  },
   "bugs" :
   {
     "url" : "https://github.com/bot-w/bModuleForTesting/issues"
