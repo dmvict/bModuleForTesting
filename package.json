@@ -1,38 +1,74 @@
 {
-  "name" : "bmodulefortesting", 
-  "description" : "Utility to manage modules of complex modular systems.", 
-  "enabled" : 1, 
-  "version" : "0.0.9", 
-  "npm.engines" : { "node" : ">= 10.0.0", "chrome" : ">= 60.0.0", "firefox" : ">= 60.0.0" }, 
-  "engine" : "node >= 10.0.0", 
-  "keywords" : [ "wTools" ], 
-  "license" : "MIT", 
-  "author" : "Kostiantyn Wandalen <wanalen@01.school>", 
-  "contributors" : 
-  [
-    "Kostiantyn Wandalen <wanalen@01.school>", 
+  "name": "bmodulefortesting",
+  "description": "Utility to manage modules of complex modular systems.",
+  "enabled": 1,
+  "version": "0.0.10",
+  "npm.engines": {
+    "node": ">= 10.0.0",
+    "chrome": ">= 60.0.0",
+    "firefox": ">= 60.0.0"
+  },
+  "engine": "node >= 10.0.0",
+  "keywords": [
+    "wTools"
+  ],
+  "license": "MIT",
+  "author": "Kostiantyn Wandalen <wanalen@01.school>",
+  "contributors": [
+    "Kostiantyn Wandalen <wanalen@01.school>",
     "Dmytro Kryvoruchko <dm.vict.kr@gmail.com>"
-  ], 
-  "scripts" : 
-  {
-    "test" : "wtest .run proto/** rapidity:-1", 
-    "docgen" : "wdocgen .build proto", 
-    "single-process-will" : "node proto/wtools/atop/will/entry/Exec", 
-    "debug-will" : "node proto/wtools/atop/will/entry/ExecDebug", 
-    "unrestricted-will" : "node proto/wtools/atop/will/entry/ExecUnrestricted", 
-    "will" : "node proto/wtools/atop/will/entry/ExecUnrestricted", 
-    "docker-build-centos" : "docker image build -t willbe-centos -f ./docker/centos.dockerfile .", 
-    "docker-build-ubuntu" : "docker image build -t willbe-ubuntu -f ./docker/ubuntu.dockerfile .", 
-    "docker-run-centos" : "docker run --rm willbe-centos", 
-    "docker-run-ubuntu" : "docker run --rm willbe-ubuntu"
-  }, 
-  "bin" : 
-  {
-    "single-process-will" : "proto/wtools/atop/will/entry/Exec", 
-    "debug-will" : "proto/wtools/atop/will/entry/ExecDebug", 
-    "unrestricted-will" : "proto/wtools/atop/will/entry/ExecUnrestricted", 
-    "will" : "proto/wtools/atop/will/entry/ExecUnrestricted"
-  }, 
-  "repository" : "https://github.com/Wandalen/bModuleForTesting.git", 
-  "bugs" : "https://github.com/Wandalen/bModuleForTesting/issues"
+  ],
+  "scripts": {
+    "test": "wtest .run proto/** rapidity:-1",
+    "docgen": "wdocgen .build proto",
+    "single-process-will": "node proto/wtools/atop/will/entry/Exec",
+    "debug-will": "node proto/wtools/atop/will/entry/ExecDebug",
+    "unrestricted-will": "node proto/wtools/atop/will/entry/ExecUnrestricted",
+    "will": "node proto/wtools/atop/will/entry/ExecUnrestricted",
+    "docker-build-centos": "docker image build -t willbe-centos -f ./docker/centos.dockerfile .",
+    "docker-build-ubuntu": "docker image build -t willbe-ubuntu -f ./docker/ubuntu.dockerfile .",
+    "docker-run-centos": "docker run --rm willbe-centos",
+    "docker-run-ubuntu": "docker run --rm willbe-ubuntu"
+  },
+  "bin": {
+    "single-process-will": "proto/wtools/atop/will/entry/Exec",
+    "debug-will": "proto/wtools/atop/will/entry/ExecDebug",
+    "unrestricted-will": "proto/wtools/atop/will/entry/ExecUnrestricted",
+    "will": "proto/wtools/atop/will/entry/ExecUnrestricted"
+  },
+  "repository": "https://github.com/Wandalen/bModuleForTesting.git",
+  "bugs": "https://github.com/Wandalen/bModuleForTesting/issues",
+  "dependencies": {
+    "wyamltools": "stable",
+    "wverbal": "stable",
+    "wtranspile": "stable",
+    "wTools": "stable",
+    "wtemplatetreeenvironment": "stable",
+    "wstatestorage": "stable",
+    "wstatesession": "stable",
+    "wstager": "stable",
+    "wselector": "stable",
+    "wresolverextra": "stable",
+    "wresolver": "stable",
+    "wprocess": "stable",
+    "wnpmtools": "stable",
+    "wnamemapper": "stable",
+    "wLogger": "stable",
+    "wgraphbasic": "stable",
+    "wgittools": "stable",
+    "wfilesencoders": "stable",
+    "wfilesarchive": "stable",
+    "wFiles": "stable",
+    "wCopyable": "stable",
+    "wcommandsconfig": "stable",
+    "wcommandsaggregator": "stable",
+    "wcensorbasic": "stable",
+    "tar": "6.1.0",
+    "open": "8.2.1",
+    "gitconfiglocal": "2.1.0",
+    "getos": "3.2.1"
+  },
+  "devDependencies": {
+    "wTesting": "stable"
+  }
 }
