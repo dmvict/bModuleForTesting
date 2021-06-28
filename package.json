@@ -1,77 +1,74 @@
 {
-  "name" : "bmodulefortesting",
-  "version" : "0.0.60",
-  "description" : "Module for testing. This module is a test asset and not intended to be used with another purpose.",
-  "author" : "Kostiantyn Wandalen <wanalen@01.school>",
-  "contributors" :
-  [
-    { "name" : "Kostiantyn Wandalen", "email" : "wanalen@01.school" },
-    { "name" : "Dmytro Kryvoruchko", "email" : "dm.vict.kr@gmail.com" }
+  "name": "bmodulefortesting",
+  "description": "Utility to manage modules of complex modular systems.",
+  "enabled": 1,
+  "version": "0.0.61",
+  "npm.engines": {
+    "node": ">= 10.0.0",
+    "chrome": ">= 60.0.0",
+    "firefox": ">= 60.0.0"
+  },
+  "engine": "node >= 10.0.0",
+  "keywords": [
+    "wTools"
   ],
-  "license" : "MIT",
-  "main" : "proto/wtools/atop/will/entry/Include.s",
-  "files" : [ "proto/wtools/atop/will", "proto/wtools/Tools.s", "out" ],
-  "bin" :
-  {
-    "will.singleproc" : "proto/wtools/atop/will/entry/Exec",
-    "will.debug" : "proto/wtools/atop/will/entry/ExecDebug",
-    "will" : "proto/wtools/atop/will/entry/ExecUnrestricted",
-    "will.unrestricted" : "proto/wtools/atop/will/entry/ExecUnrestricted"
+  "license": "MIT",
+  "author": "Kostiantyn Wandalen <wanalen@01.school>",
+  "contributors": [
+    "Kostiantyn Wandalen <wanalen@01.school>",
+    "Dmytro Kryvoruchko <dm.vict.kr@gmail.com>"
+  ],
+  "scripts": {
+    "test": "wtest .run proto/** rapidity:-1",
+    "docgen": "wdocgen .build proto",
+    "single-process-will": "node proto/wtools/atop/will/entry/Exec",
+    "debug-will": "node proto/wtools/atop/will/entry/ExecDebug",
+    "unrestricted-will": "node proto/wtools/atop/will/entry/ExecUnrestricted",
+    "will": "node proto/wtools/atop/will/entry/ExecUnrestricted",
+    "docker-build-centos": "docker image build -t willbe-centos -f ./docker/centos.dockerfile .",
+    "docker-build-ubuntu": "docker image build -t willbe-ubuntu -f ./docker/ubuntu.dockerfile .",
+    "docker-run-centos": "docker run --rm willbe-centos",
+    "docker-run-ubuntu": "docker run --rm willbe-ubuntu"
   },
-  "scripts" :
-  {
-    "test" : "wtest .run 'proto/**' rapidity:-1",
-    "docgen" : "wdocgen .build proto",
-    "will.singleproc" : "node proto/wtools/atop/will/entry/Exec",
-    "will.debug" : "node proto/wtools/atop/will/entry/ExecDebug",
-    "will.unrestricted" : "node proto/wtools/atop/will/entry/ExecUnrestricted",
-    "will" : "node proto/wtools/atop/will/entry/ExecUnrestricted",
-    "docker-build-centos" : "docker image build -t willbe-centos -f ./docker/centos.dockerfile .",
-    "docker-build-ubuntu" : "docker image build -t willbe-ubuntu -f ./docker/ubuntu.dockerfile .",
-    "docker-run-centos" : "docker run --rm willbe-centos",
-    "docker-run-ubuntu" : "docker run --rm willbe-ubuntu"
+  "bin": {
+    "single-process-will": "proto/wtools/atop/will/entry/Exec",
+    "debug-will": "proto/wtools/atop/will/entry/ExecDebug",
+    "unrestricted-will": "proto/wtools/atop/will/entry/ExecUnrestricted",
+    "will": "proto/wtools/atop/will/entry/ExecUnrestricted"
   },
-  "repository" :
-  {
-    "type" : "git",
-    "url" : "https://github.com/bot-w/bModuleForTesting.git"
+  "repository": "https://github.com/Wandalen/bModuleForTesting.git",
+  "bugs": "https://github.com/Wandalen/bModuleForTesting/issues",
+  "dependencies": {
+    "wyamltools": "latest",
+    "wverbal": "latest",
+    "wtranspile": "latest",
+    "wTools": "latest",
+    "wtemplatetreeenvironment": "latest",
+    "wstatestorage": "latest",
+    "wstatesession": "latest",
+    "wstager": "latest",
+    "wselector": "latest",
+    "wresolverextra": "latest",
+    "wresolver": "latest",
+    "wprocess": "latest",
+    "wnpmtools": "latest",
+    "wnamemapper": "latest",
+    "wLogger": "latest",
+    "wgraphbasic": "latest",
+    "wgittools": "latest",
+    "wfilesencoders": "latest",
+    "wfilesarchive": "latest",
+    "wFiles": "latest",
+    "wCopyable": "latest",
+    "wcommandsconfig": "latest",
+    "wcommandsaggregator": "latest",
+    "wcensorbasic": "latest",
+    "tar": "6.1.0",
+    "open": "8.2.1",
+    "gitconfiglocal": "2.1.0",
+    "getos": "3.2.1"
   },
-  "bugs" :
-  {
-    "url" : "https://github.com/bot-w/bModuleForTesting/issues"
-  },
-  "dependencies" :
-  {
-    "tar" : "6.0.2",
-    "gitconfiglocal" : "2.1.0",
-    "open" : "7.0.4",
-    "getos" : "3.2.1",
-    "wTools" : "gamma",
-    "wCopyable" : "gamma",
-    "wLogger" : "gamma",
-    "wverbal" : "gamma",
-    "wtemplatetreeenvironment" : "gamma",
-    "wtemplatefilewriter" : "gamma",
-    "wprocess" : "gamma",
-    "wgraphbasic" : "gamma",
-    "wFiles" : "gamma",
-    "wfilesarchive" : "gamma",
-    "wfilesencoders" : "gamma",
-    "wstatestorage" : "gamma",
-    "wstatesession" : "gamma",
-    "wstager" : "gamma",
-    "wgraphextra" : "gamma",
-    "wselector" : "gamma",
-    "wresolver" : "gamma",
-    "wresolverextra" : "gamma",
-    "wcommandsaggregator" : "gamma",
-    "wcommandsconfig" : "gamma",
-    "wnamemapper" : "gamma",
-    "wtranspile" : "gamma",
-    "wnpmtools" : "gamma",
-    "wyamltools" : "gamma",
-    "wcensorbasic" : "gamma"
-  },
-  "devDependencies" : { "eslint" : "7.1.0", "wTesting" : "gamma" },
-  "keywords" : [ "wTools" ]
+  "devDependencies": {
+    "wTesting": "latest"
+  }
 }
